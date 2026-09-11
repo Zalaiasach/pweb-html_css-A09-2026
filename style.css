@@ -1,3 +1,51 @@
 body{
-    background-color:darkkhaki;
+    background-color:ghostwhite;
+    font-family: 'inter', sans-serif;
+}
+
+.ContainerAwal{
+    display:flex;
+    align-items:center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/BGProfil.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:20px;
+    margin:20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+}
+
+.foto-profil{
+    margin-right:20px;
+    border-radius:50%;
+    display:auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.foto-profil:hover {
+    transform: scale(1.2);
+}
+
+.ButtonContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.ProfilButton{
+    display: inline-block;
+    background-color: lightblue;
+    color:white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform background-color 0.3s ease-in-out;
+}
+
+.ProfilButton:hover {
+    background-color: lightgray;
+    transform: scale(1.2);
 }
