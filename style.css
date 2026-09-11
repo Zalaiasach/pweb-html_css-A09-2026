@@ -29,12 +29,6 @@ body{
     transform: scale(1.2);
 }
 
-.ButtonContainer{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-}
-
 .ProfilButton{
     display: inline-block;
     background-color: lightblue;
@@ -43,9 +37,48 @@ body{
     border-radius: 5px;
     text-decoration: none;
     transition: transform background-color 0.3s ease-in-out;
+    margin-left:auto;
 }
 
 .ProfilButton:hover {
     background-color: lightgray;
     transform: scale(1.2);
+}
+
+.ContainerKedua{
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #cccccc;
+}
+
+
+.ContainerKetiga{
+    background-color:azure;
+    padding:20px;
+    margin:20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.AchievementList{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.AchievementItem{
+    background-color:snow;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .AchievementList{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .ContainerAwal{
+        display:block;
+    }
 }
