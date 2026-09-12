@@ -31,7 +31,7 @@ body{
 
 .ProfilButton{
     display: inline-block;
-    background-color: lightblue;
+    background-color:firebrick ;
     color:white;
     padding: 12px 24px;
     border-radius: 5px;
@@ -68,17 +68,57 @@ body{
 }
 
 .AchievementItem{
-    background-color:snow;
+    background-color:darksalmon;
     padding: 15px;
     border: 1px solid black;
     border-radius: 5px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
-    .AchievementList{
-        grid-template-columns: repeat(1, 1fr);
+    body {
+        padding: 5px;
     }
-    .ContainerAwal{
-        display:block;
+
+    .ContainerAwal {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 15px;
+        margin: 10px auto;
+    }
+
+    .foto-profil {
+        width: 100px;
+        height: 100px;
+    }
+
+    .DeskripsiAwal h1 {
+        font-size: 1.35rem;
+    }
+
+    .DeskripsiAwal h2 {
+        font-size: 1.05rem;
+    }
+
+    .ProfilButton {
+        margin: 15px auto 0 auto;
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .ContainerKedua, 
+    .ContainerKetiga {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    .AchievementList {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .AchievementItem img {
+        max-height: 180px;
+        width: auto;
     }
 }
