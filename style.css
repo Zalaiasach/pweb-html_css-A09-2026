@@ -1,27 +1,28 @@
-body{
-    background-color:ghostwhite;
-    font-family: 'inter', sans-serif;
+body {
+    margin: 0;
+    background-color: ghostwhite;
+    font-family: Arial, sans-serif;
 }
 
-.ContainerAwal{
-    display:flex;
-    align-items:center;
+.ContainerAwal {
+    display: flex;
+    align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/BGProfil.jpg');
     background-size: cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    padding:20px;
-    margin:20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 20px;
     border: 1px solid black;
     border-radius: 10px;
     color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.foto-profil{
-    margin-right:20px;
-    border-radius:50%;
-    display:auto;
+.foto-profil {
+    display: block;
+    margin-right: 20px;
+    border-radius: 50%;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -29,15 +30,15 @@ body{
     transform: scale(1.2);
 }
 
-.ProfilButton{
+.ProfilButton {
     display: inline-block;
-    background-color:firebrick ;
-    color:white;
+    margin-left: auto;
+    background-color: firebrick;
+    color: white;
     padding: 12px 24px;
     border-radius: 5px;
     text-decoration: none;
-    transition: transform background-color 0.3s ease-in-out;
-    margin-left:auto;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .ProfilButton:hover {
@@ -45,34 +46,240 @@ body{
     transform: scale(1.2);
 }
 
-.ContainerKedua{
+.ContainerKedua {
     background-color: #ffffff;
     padding: 20px;
     margin: 20px;
     border: 1px solid #cccccc;
 }
 
-
-.ContainerKetiga{
-    background-color:azure;
-    padding:20px;
-    margin:20px;
+.ContainerKetiga {
+    background-color: azure;
+    padding: 20px;
+    margin: 20px;
     border: 1px solid black;
     border-radius: 10px;
 }
 
-.AchievementList{
-    display:grid;
+.AchievementList {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+    gap: 15px;
 }
 
-.AchievementItem{
-    background-color:darksalmon;
+.AchievementItem {
+    background-color: darksalmon;
     padding: 15px;
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
+}
+
+.AchievementItem img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* index2.html */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: firebrick;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background-color: black;
+    transform: translateY(-2px);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    min-height: 360px;
+    padding: 100px 30px;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/BGProfil.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    margin: 0 0 10px;
+    font-size: 2.4rem;
+}
+
+.hero-text h2 {
+    margin: 0 0 16px;
+}
+
+.cv-label {
+    display: inline-block;
+    background-color: firebrick;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+.section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.section-soft {
+    background-color: azure;
+    max-width: none;
+    padding-left: calc((100% - 1100px) / 2 + 50px);
+    padding-right: calc((100% - 1100px) / 2 + 50px);
+}
+
+.about-card {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    line-height: 1.7;
+}
+
+.cv-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cv-table th,
+.cv-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    vertical-align: top;
+}
+
+.cv-table th {
+    width: 220px;
+    color: firebrick;
+}
+
+.education-grid,
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card,
+.achievement-card,
+.skill-row {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover,
+.achievement-card:hover,
+.skill-row:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-item {
+    background-color: white;
+    padding: 20px;
+    border-left: 5px solid firebrick;
+    border-radius: 5px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-item h3,
+.card h3,
+.achievement-card h3 {
+    color: firebrick;
+    margin-top: 0;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.skill-row {
+    border-left: 5px solid firebrick;
+    text-align: left;
+}
+
+.skill-row span {
+    display: inline-block;
+    color: #222222;
+    font-weight: bold;
+}
+
+.bar,
+.fill {
+    display: none;
+}
+
+.achievement-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+}
+
+@media (max-width: 1024px) {
+    .AchievementList,
+    .education-grid,
+    .achievement-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        padding: 80px 30px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -90,6 +297,7 @@ body{
     .foto-profil {
         width: 100px;
         height: 100px;
+        margin-right: 0;
     }
 
     .DeskripsiAwal h1 {
@@ -101,24 +309,64 @@ body{
     }
 
     .ProfilButton {
-        margin: 15px auto 0 auto;
         width: 100%;
         max-width: 220px;
+        margin: 15px auto 0;
+        text-align: center;
     }
 
-    .ContainerKedua, 
+    .ContainerKedua,
     .ContainerKetiga {
         padding: 15px;
         margin: 10px auto;
     }
 
-    .AchievementList {
+    .AchievementList,
+    .education-grid,
+    .achievement-grid,
+    .skills-container {
         grid-template-columns: 1fr;
-        gap: 15px;
     }
 
     .AchievementItem img {
-        max-height: 180px;
         width: auto;
+        max-height: 180px;
+    }
+
+    .back-button {
+        top: 10px;
+        left: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 20px 50px;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .section,
+    .section-soft {
+        padding: 25px;
+    }
+
+    .cv-table th,
+    .cv-table td {
+        display: block;
+        width: auto;
+        padding: 10px 0;
+    }
+
+    .cv-table th {
+        border-bottom: 0;
+        padding-bottom: 0;
     }
 }
